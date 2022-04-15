@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta charset="UTF-8">
+	<title>Compass</title>
+	
+		<style>
+			.personalize1a {
+				font-size: 100px;
+				color: red;
+			}
+			.personalize1b {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			.verticalLine {
+				border-left: 6px solid cyan;
+				height: 36.75vh;
+				position: absolute;
+				left: 50%;
+			}
+			.horizontalLine {
+				border-top: 6px solid cyan;
+				width: 29.375vw;
+				position: absolute;
+				top: 50%;
+			}
+			
+			
+			
+			.Rutgers{
+				width: 10vw;
+				position: absolute;
+				left: 3%;
+				top: 4%;
+			}
+			.canvas{
+				width: 10vw;
+				position: absolute;
+				left: 3%;
+				top: 25%;
+			}
+			
+			
+			
+			.genshinDaily {
+				width: 10vw;
+				position: absolute;
+				left: 88%;
+				top: 60%;
+			}
+			.genshin {
+				width: 10vw;
+				position: absolute;
+				left: 87%;
+				top: 53%;
+			}
+			.discord {
+				width: 10vw;
+				position: absolute;
+				left: 73%;
+				top: 53%;
+			}
+			.minecraft {
+				width: 8vw;
+				position: absolute;
+				left: 90%;
+				top: 80%;
+			}
+			.swgoh {
+				width: 8vw;
+				position: absolute;
+				left: 80%;
+				top: 80%;
+			}
+			
+			
+			
+			.drive {
+				width: 10vw;
+				position: absolute;
+				left: 88%;
+				top: 5%;
+			}
+			.gmail {
+				width: 10vw;
+				position: absolute;
+				left: 88%;
+				top: 28%;
+			}
+			.youtube {
+				width: 10vw;
+				position: absolute;
+				left: 75%;
+				top: 5%;
+			}
+			.twitch {
+				width: 8vw;
+				position: absolute;
+				left: 78%;
+				top: 23%;
+			}
+			.groupMe {
+				width: 7vw;
+				position: absolute;
+				left: 52%;
+				top: 5%;
+			}
+			.linkedin {
+				width: 5vw;
+				position: absolute;
+				left: 53%;
+				top: 22%;
+			}
+			.zoom {
+				width: 10vw;
+				position: absolute;
+				left: 58%;
+				top: 5%;
+			}
+			
+			
+			
+			.googleNews {
+				width: 10vw;
+				position: absolute;
+				left: 3%;
+				top: 53%;
+			}
+			.allSides {
+				width: 13vw;
+				position: absolute;
+				left: 2%;
+				top: 70%;
+			}
+			.pandora {
+				width: 8vw;
+				position: absolute;
+				left: 2%;
+				top: 80%;
+			}
+		</style>
+		
+		<script>
+			
+		function transfer(location)
+		{
+			document.getElementById("transfer").innerHTML = "/java/Simulate.html";
+			var xhr= new XMLHttpRequest();
+			xhr.open('GET', 'http://localhost:8080/Util/java/Simulate.html?location=' + location, true);
+			xhr.send();
+		}
+		
+		</script>
+		
+	</head>
+
+	<body style = "background-color: darkblue">
+		
+		<div id = "transfer"></div>
+		
+		<div class = "personalize1b">
+			<a href = "https://cas.rutgers.edu/login?renew=true&service=https://my.rutgers.edu/portal/Login" target = "_blank" class = "personalize1a" onClick = "transfer('Rutgerz')">RUTGERZ</a>
+		</div>
+		
+		<div style = "top: 3%" class = "verticalLine"></div>
+		<div style = "bottom: 3%" class = "verticalLine"></div>
+		
+		<div style = "left: 3%" class = "horizontalLine"></div>
+		<div style = "right: 3%" class = "horizontalLine"></div>
+		
+		<div>
+			<a href = "https://www.rutgers.edu/" target = "_blank"><img src = "images/Rutgers.png" class = "Rutgers" onClick = "transfer('Rutgers')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=en-us" target = "_blank"><img src = "images/fowl.png" class = "genshinDaily" onClick = "transfer('GenshinDaily')"></img></a>
+		</div>
+		
+		<div>
+			<img src = "images/genshin.png" target = "_blank" class = "genshin" onClick = "transfer('Genshin')"></img></a>
+		</div>
+		
+		<div>
+			<img src = "images/discord.png" target = "_blank" class = "discord" onClick = "transfer('Discord')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://drive.google.com/drive/u/5/my-drive" target = "_blank"><img src = "images/drive.png" class = "drive" onClick = "transfer('Drive')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://mail.google.com/mail/u/5/#inbox" target = "_blank"><img src = "images/gmail.png" class = "gmail" onClick = "transfer('Gmail')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://canvas.rutgers.edu/" target = "_blank"><img src = "images/canvas.png" class = "canvas" onClick = "transfer('Canvas')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://www.youtube.com/" target = "_blank"><img src = "images/youtube.png" class = "youtube" onClick = "transfer('Youtube')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://web.groupme.com/signin" target = "_blank"><img src = "images/groupMe.png" class = "groupMe" onClick = "transfer('GroupMe')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://news.google.com/topstories?hl=en-US&gl=US&ceid=US:en" target = "_blank"><img src = "images/googleNews.png" class = "googleNews" onClick = "transfer('GoogleNews')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://www.allsides.com/unbiased-balanced-news" target = "_blank"><img src = "images/allSides.png" class = "allSides" onClick = "transfer('AllSides')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://www.linkedin.com/login?fromSignIn=true&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs&trk=guest_homepage-jobseeker_nav-header-signin" target = "_blank"><img src = "images/linkedin.png" class = "linkedin" onClick = "transfer('Linkedin')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://zoom.us/join" target = "_blank"><img src = "images/zoom.png" class = "zoom" onClick = "transfer('Zoom')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://www.twitch.tv/" target = "_blank"><img src = "images/twitch.png" class = "twitch" onClick = "transfer('Twitch')"></img></a>
+		</div>
+		
+		<div>
+			<img src = "images/minecraft.png" class = "minecraft" onClick = "transfer('Minecraft')"></img>
+		</div>
+		
+		<div>
+			<a href = "https://swgoh.gg/" target = "_blank"><img src = "images/swgoh.png" class = "swgoh" onClick = "transfer('Swgoh')"></img></a>
+		</div>
+		
+		<div>
+			<a href = "https://www.pandora.com/station" target = "_blank"><img src = "images/pandora.png" class = "pandora" onClick = "transfer('Pandora')"></img></a>
+		</div>
+	</body>
+
+</html>
